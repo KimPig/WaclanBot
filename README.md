@@ -2,7 +2,7 @@
 <h3 align="center">WaclanBot</h3>
 
   <p align="center">
-    <a href="[https://github.com/brblacky/lavamusic](https://github.com/h00z3x/Lost-Music-V2)">Lost-Music-V2</a>의 수정된 버전전
+    <a href="[https://github.com/brblacky/lavamusic](https://github.com/h00z3x/Lost-Music-V2)">Lost-Music-V2</a>의 수정된 버전
     <br/>
   </p>
 </p>
@@ -73,7 +73,7 @@ GENIUS_KEY=""
 ```sh
 npx prisma generate
 ```
-5. 데이터베이스 생성성
+5. 데이터베이스 생성
 ```sh
 npx prisma migrate dev
 ```
@@ -91,7 +91,7 @@ node index.js
 
 ## Authors
 
-* **KimPig** - *This Repo Writer* - [KimPig](https://github.com/kimpig) - *some changes and some fixes in js
+* **KimPig** - *This Repo Writer* - [KimPig](https://github.com/kimpig) - *Some Changes and Fixes*
 * **h00z3x** - *Developer* - [h00z3x](https://github.com/h00z3x/) - *almost everthing in js, Lyrics, Database, Fix Playlist*
 * **brblacky** - *The Person I respect* - [brblacky](https://github.com/brblacky/) - *almost everything in typescript*
 
