@@ -1,22 +1,11 @@
-<br/>
-<p align="center">
-  <a href="https://github.com/h00z3x/Lost-Music-V2">
-    <img src="https://cdn.discordapp.com/icons/1015701743583113247/af60925b2ade41e55f3f14b11f00dde0.webp?size=1024" alt="Logo" width="80" height="80">
-  </a>
 
-<h3 align="center">Lost Island Music V2</h3>
+<h3 align="center">WaclanBot</h3>
 
   <p align="center">
-    An edited version of <a href="https://github.com/brblacky/lavamusic">LavaMusic</a>.
+    <a href="[https://github.com/brblacky/lavamusic](https://github.com/h00z3x/Lost-Music-V2)">Lost-Music-V2</a>의 수정된 버전전
     <br/>
-    <br/>
-    <a href="https://github.com/h00z3x/Lost-Music-V2/issues">Report Bug</a>
-    .
-    <a href="https://github.com/h00z3x/Lost-Music-V2/issues">Request Feature</a>
   </p>
 </p>
-
-![Downloads](https://img.shields.io/github/downloads/h00z3x/Lost-Music-V2/total) ![Contributors](https://img.shields.io/github/contributors/h00z3x/Lost-Music-V2?color=dark-green) ![Forks](https://img.shields.io/github/forks/h00z3x/Lost-Music-V2?style=social) ![Stargazers](https://img.shields.io/github/stars/h00z3x/Lost-Music-V2?style=social) ![Issues](https://img.shields.io/github/issues/h00z3x/Lost-Music-V2)
 
 ## Table Of Contents
 
@@ -26,22 +15,17 @@
     * [Installation](#installation)
 * [Usage](#usage)
 * [Roadmap](#roadmap)
-* [Contributing](#contributing)
 * [Authors](#authors)
 * [Acknowledgements](#acknowledgements)
 
 ## About The Project
 
-Lost Island Server Music Bot Source. An edited version of LavaMusic.
-
-**Why Lost Music:**
-1. Fixed playlist on lavamusic.
-2. Changed the mongodb to sqlite for easier use.
-3. Added lyrics command.
+WaclanBot은 LavaMusic과 Lost-Music-V2의 수정된 버전으로
+한글 제공 및 몇가지 커스터마이징을 했습니다.
 
 ## Getting Started
 
-You need node.js preferably latest version if it doesn't work!
+node.js를 최신 버전으로 유지해 주세요.
 
 ### Prerequisites
 
@@ -53,71 +37,65 @@ npm install npm@latest -g
 
 ### Installation
 
-1. Clone the repo
+1. 레포 클론
 
 ```sh
-git clone https://github.com/h00z3x/Lost-Music-V2.git
+git clone https://github.com/KimPig/WaclanBot.git
 ```
 
-2. Install NPM packages
+2. NPM 패키지 설치
 
 ```sh
 npm install
 ```
 
-3. Edit .ENV FILE
+3. .env 파일 수정
 
 ```dotenv
-TOKEN="" # Your bot token
-PREFIX="-" # Your prefix
-OWNER_IDS="id, id, id" # Your ID
-CLIENT_ID="clientid" # Your bot client ID
-GUILD_ID="" # Your server ID (if you want to use it for a single server)
-PRODUCTION="true" # "true" for production
-DATABASE_URL="file:./database.db" #DONT CHANGE IT
-LAVALINK_URL="" # Your lavalink url
-LAVALINK_AUTH="1" # Your lavalink password
-LAVALINK_NAME="" # Your lavalink name
-LAVALINK_SECURE= "" # true for secure lavalink
-BOT_ACTIVITY_TYPE=2 # Activity type is a number from 0 to 5 see more here https://discord.com/developers/docs/topics/gateway-events#activity-object-activity-types
-BOT_STATUS="idle"
-BOT_ACTIVITY="Lost Music"
+TOKEN="" # 봇 토큰
+PREFIX="-" # 봇 접두사
+OWNER_IDS="id, id, id" # 주인 ID
+CLIENT_ID="clientid" # 봇 클라이언트 ID
+GUILD_ID="" # 서버 ID (오직 한 서버에서 사용할 경우에만 추가하세요)
+PRODUCTION="true" 
+DATABASE_URL="file:./database.db" 
+LAVALINK_URL="" # lavalink 주소
+LAVALINK_AUTH="1" # lavalink 비밀번호
+LAVALINK_NAME="" # lavalink 이름
+LAVALINK_SECURE= "" # lavalink 암호화
+BOT_ACTIVITY_TYPE="Watching" # "Listening","Watching","Competing","Custom","Playing","Streaming" 에서 선택하세요
+BOT_STATUS="online"
+BOT_ACTIVITY="WaclanBot"
 GENIUS_KEY=""
 ```
 
-4. Generate Prisma
+4. Prisma 생성
 ```sh
 npx prisma generate
 ```
-5. Generate Database
+5. 데이터베이스 생성성
 ```sh
 npx prisma migrate dev
 ```
 
 ## Usage
 
-Run:
+실행:
 ```sh
 node index.js
 ```
 
 ## Roadmap
 
-See the [open issues](https://github.com/h00z3x/Lost-Music-V2/issues) for a list of proposed features (and known issues).
-
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-* If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/h00z3x/Lost-Music-V2/issues/new) to discuss it, or directly create a pull request after you edit the *README.md* file with necessary changes.
-* Please make sure you check your spelling and grammar.
-* Create individual PR for each suggestion.
-* Please also read through the [Code Of Conduct](https://github.com/h00z3x/Lost-Music-V2/blob/main/CODE_OF_CONDUCT.md) before posting your first idea as well.
+도커 이미지 화 예정.
 
 ## Authors
 
-* **h00z3x** - *Developer* - [h00z3x](https://github.com/h00z3x/) - *Lyrics, Database, Fix Playlist*
+* **KimPig** - *This Repo Writer* - [KimPig](https://github.com/kimpig) - *some changes and some fixes in js
+* **h00z3x** - *Developer* - [h00z3x](https://github.com/h00z3x/) - *almost everthing in js, Lyrics, Database, Fix Playlist*
 * **brblacky** - *The Person I respect* - [brblacky](https://github.com/brblacky/) - *almost everything in typescript*
 
 ## Acknowledgements
 
+* [Lost-Music-V2](https://github.com/h00z3x/Lost-Music-V2)
 * [LavaMusic](https://github.com/brblacky/lavamusic)
