@@ -39,7 +39,7 @@ export default {
 		jiosaavn: 'https://i.imgur.com/N9Nt80h.png',
 	} as any,
 	links: {
-		img: 'https://i.imgur.com/ud3EWNh.jpg',
+		img: 'https://file.waclan.net/api/public/dl/epbX2A0k?inline=true',
 	},
 };
 

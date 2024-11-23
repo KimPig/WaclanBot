@@ -38,35 +38,31 @@ export default class About extends Command {
 			.setURL(
 				`https://discord.com/api/oauth2/authorize?client_id=${client.env.CLIENT_ID}&permissions=8&scope=bot%20applications.commands`,
 			);
-		const supportButton = new ButtonBuilder()
-			.setLabel(ctx.locale('buttons.support'))
-			.setStyle(ButtonStyle.Link)
-			.setURL('https://discord.gg/ns8CTk9J3e');
-		const row = new ActionRowBuilder<ButtonBuilder>().addComponents(inviteButton, supportButton);
+		const row = new ActionRowBuilder<ButtonBuilder>().addComponents(inviteButton);
 		const embed = this.client
 			.embed()
 			.setAuthor({
-				name: 'Lavamusic',
-				iconURL: 'https://media.discordapp.net/attachments/876035356460462090/888434725235097610/20210820_124325.png',
+				name: 'WaclanBot',
+				iconURL: 'https://file.waclan.net/api/public/dl/ZVsjyBjs?inline=true',
 			})
 			.setThumbnail(
-				'https://media.discordapp.net/attachments/876035356460462090/888434725235097610/20210820_124325.png',
+				'https://file.waclan.net/api/public/dl/ZVsjyBjs?inline=true',
 			)
 			.setColor(this.client.color.main)
 			.addFields(
 				{
 					name: ctx.locale('cmd.about.fields.creator'),
-					value: '[appujet](https://github.com/appujet)',
+					value: '[KimPig](https://github.com/KimPig)',
 					inline: true,
 				},
 				{
 					name: ctx.locale('cmd.about.fields.repository'),
-					value: '[Here](https://github.com/appujet/lavamusic)',
+					value: '[링크](https://github.com/KimPig/WaclanBot)',
 					inline: true,
 				},
 				{
 					name: ctx.locale('cmd.about.fields.support'),
-					value: '[Here](https://discord.gg/ns8CTk9J3e)',
+					value: '[링크](https://waclan.net)',
 					inline: true,
 				},
 				{
